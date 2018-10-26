@@ -1,0 +1,66 @@
+/********* python学习会议摘要 *****************/
+主题：关于python开发环境和深度学习开发环境的建立，以及深度学习初探。
+时间：2018年10月25日下午13:00 ~ 17:00
+参加人员： 张禹，张倩，王永志，王宁，李家铮，白广东，王富民，张恒，张博，孙正宇，单涵琪，陆登宇，姚光瑞，田青。
+
+/********* 会议过程 *****************/
+1. 由田青带领大家去安装工大的tensorflow开发环境，机器上已经安装了NIVIDIA GTX 1070显卡的驱动，我们一起安装了CUDA，但是在安装tensorflow gpu版本的时候失败。现在怀疑是系统安装的有点问题。我大概把tensorflow安装的顺序总结一下：
+///////////// 安装NVIDIA显卡驱动 //////////
+执行如下语句安装NVIDIA驱动
+　　　　sudo add-apt-repository ppa:graphics-drivers/ppa
+　　　　sudo apt-get update
+　　　　sudo apt-get install nvidia-410  //驱动版本不同，对应不同的数字
+执行完上述命令后若无问题，重启
+　　　　sudo reboot
+　　重启后输入下面的命令显示GPU列表，检查驱动是否安装成功。
+　　　　sudo nvidia-smi
+///////////// 安装CUDA库 //////////
+参考下面的链接安装CUDA
+https://tensorflow.google.cn/install/gpu
+///////////// 安装tensorflow //////////
+参考下面的链接安装tensorflow, 注意在virtual environment 中安装tensorflow。
+https://tensorflow.google.cn/install/pip
+
+
+2. 田青讲解了virtual environment的好处，virtual env的好处主要是解决不同项目之间的依赖冲突问题。
+https://virtualenv.pypa.io/en/latest/
+
+
+3. 针对一个简单的图像分类实例讲解了训练一个神经网络的基本过程，和DNN网络的一些基本特点，大家针对一些具体的问题进行了讨论，代码的链接如下：
+https://github.com/tensorflow/docs/blob/master/site/en/tutorials/keras/basic_classification.ipynb
+
+3.1	想演示如果使用git命令clone代码，但是当时github访问不了，没有成功，下面总结一下：
+例如可以使用命令: git clone https://github.com/tensorflow/docs.git
+讲整个项目拷贝到本地，然后取出你想要的代码，例如tutorials下的所有文件。
+
+3.2	演示使用jupyter notebook执行.jpynb文件。
+需要在virtual environment中安装jupyter notebook，网址：http://jupyter.org/
+安装命令为：python3 -m pip install jupyter
+启动时执行：jupyter notebook
+然后就可以打开浏览器执行相应的文件了。
+
+3.3	讲解了训练一个神经网络的基本过程，基本过程如下：
+	a.  数据准备
+	b.  定义模型
+	c.  选择损失函数和优化器等超参数
+	d.  训练
+	e.  评价和预测。
+详细见代码basic_classification.ipynb。
+
+3.4	讲解了损失函数和全连接网络的结构。
+
+
+/********* 会议总结 *****************/
+大家的积极性还是比较高，讨论也比较热烈。
+我遗漏了一个地方没有讲，就是如何在开发环境pycharm中运行代码，下次补上。
+
+
+总结作者： 田青
+总结时间： 2018年10月26日
+
+
+
+
+
+
+
