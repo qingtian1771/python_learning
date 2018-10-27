@@ -1,0 +1,67 @@
+这个文档是集体学习python的一个计划，时间跨度大概是两个月，主要是通过自己学习和交流，中间会有一些讲课来帮助大家学习。
+
+/************* 学习目的 ************/
+采用集体学习的方式，在比较短的时间内掌握一下内容：
+1.  python的基础知识，一些基本库例如numpy、pandas等等的使用。
+2.  使用python进行机器学习的方式
+3.  tensorflow库（包括keras）的使用，以及深度学习基本结构的设计和训练
+4.  深度学习在强化学习中的应用。
+
+
+/************* 学习资源 ************/
+关于python语言：
+https://www.learnpython.org/
+这个网站上的代码可以在线运行，最基础的可以从这里开始
+https://docs.python.org/3/tutorial/
+这个是官方的比较完整的教程
+https://docs.scipy.org/doc/numpy/user/quickstart.html
+numpy是一个用于科学计算的库，在数据处理上非常高效，虽然它不是python标准库的一部分，但是它应用非常广泛，可以作为语言的一部分来学习
+
+机器学习和深度学习：
+推荐的书籍：Hands-On Machine Learning with Scikit-Learn & TensorFlow
+http://scikit-learn.org/stable
+scikit-learn是一个python的机器学习库，应用也非常广泛，对于一般的机器学习比较实用。
+https://tensorflow.google.cn/tutorials/
+学习和应用tensorflow是我们最终的目的，上面的链接是官方的教程，可以以这个作为入手点。
+https://tensorflow.google.cn/guide/keras
+keras在tensorflow的上层，也就是说写出的代码更加简洁，现在已经是tensorflow的一部分了。
+https://pytorch.org/
+pytorch是另外一个深度学习python库，近来上升的势头很猛，未来也需要学习。
+
+强化学习：CS294-112教程。
+
+/************* 讲课计划 ************/
+目前暂时的计划是讲5次课程，每次课程的内容大概如下：
+
+1.  关于python开发环境和深度学习开发环境的建立，以及深度学习初探。
+这个课程2018年10月25日已经完成，见课程总结“python_learning_20181025_summary.txt”。
+第一次可以的目的就是给大家建立感觉，对开发环境和工具的感觉，以及深度学习的感觉，并没有很详细的内容。
+
+2.  学习python语言、numpy和scikit-learn。
+课程预习：自学python教程、numpy教程。
+帮大家强化python语言和numpy，以及基本的机器学习方法。
+
+3.  tensorflow详解。
+课程预习：https://tensorflow.google.cn/tutorials/上面的例子；深度学习理论。
+详细的讲解tensorflow以及keras，并且通过一些例子来讲解DNN、CNN、RNN。
+
+4.  深度学习的复杂应用。
+讲解几个深度学习的复杂应用。
+
+5.  强化学习基础以及深度学习在强化学习领域中的应用。
+讲解几个深度学习在强化学习中的应用。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
