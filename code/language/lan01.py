@@ -47,6 +47,7 @@ two = 2
 hello = "hello"
 # print(one + two + hello)
 
+############### Lists
 # Lists类似于数组，可以包含任意变量类型，数量也没有限制。
 # Lists可以使用多种方式来访问，下标或者循环。
 mylist = []
@@ -109,7 +110,8 @@ print("A list: %s" % mylist)
 # %.<number of digits>f - Floating point numbers with a fixed amount of digits to the right of the dot.
 # %x/%X - Integers in hex representation (lowercase/uppercase)
 
-# 关于字符串的操作符
+
+############### 关于字符串的操作符
 astring = "Hello world!"
 # 可以取得字符串的长度。
 print(len(astring))
@@ -134,5 +136,41 @@ print(astring.endswith("asdfasdfasdf"))
 afewwords = astring.split(" ")
 print(afewwords)
 
+# 可以支持多行字符串
+print("""\
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+""")
+# 也可以支持长的字符串分成多行输入
+text = ('Put several strings within parentheses '
+        'to have them joined together.')
+print(text)
 
+
+############### 字典
+# 字典类似List，但是有键和值，每个值都可以通过对应的键来存取，键可以是任意类型的对象（字符串、数字、List）
+phonebook = {}
+phonebook["John"] = 938477566
+phonebook["Jack"] = 938377264
+phonebook["Jill"] = 947662781
+print(phonebook)
+
+# 字典可以用下面的方式初始化
+phonebook = {
+    "John" : 938477566,
+    "Jack" : 938377264,
+    "Jill" : 947662781
+}
+print(phonebook)
+
+# 可以用下面的方式来访问字典中的所有元素，字典中的元素是没有顺序的。
+for name, number in phonebook.items():
+    print("Phone number of %s is %d" % (name, number))
+
+# 删除一个元素,可以用下面的两种方式。
+del phonebook["John"]
+print(phonebook)
+phonebook.pop("Jack")
+print(phonebook)
 

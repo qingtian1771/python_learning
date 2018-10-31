@@ -12,23 +12,34 @@
 关于python语言：
 https://www.learnpython.org/
 这个网站上的代码可以在线运行，最基础的可以从这里开始
+
+http://www.runoob.com/python3/python3-examples.html
+这个是中文的python3基础教程，可读性比较强
+
 https://docs.python.org/3/tutorial/
 这个是官方的比较完整的教程
+
 https://docs.scipy.org/doc/numpy/user/quickstart.html
 numpy是一个用于科学计算的库，在数据处理上非常高效，虽然它不是python标准库的一部分，但是它应用非常广泛，可以作为语言的一部分来学习
 
+
 机器学习和深度学习：
 推荐的书籍：Hands-On Machine Learning with Scikit-Learn & TensorFlow
+
 http://scikit-learn.org/stable
 scikit-learn是一个python的机器学习库，应用也非常广泛，对于一般的机器学习比较实用。
+
 https://tensorflow.google.cn/tutorials/
 学习和应用tensorflow是我们最终的目的，上面的链接是官方的教程，可以以这个作为入手点。
+
 https://tensorflow.google.cn/guide/keras
 keras在tensorflow的上层，也就是说写出的代码更加简洁，现在已经是tensorflow的一部分了。
+
 https://pytorch.org/
 pytorch是另外一个深度学习python库，近来上升的势头很猛，未来也需要学习。
 
-强化学习：CS294-112教程。
+强化学习：
+CS294-112教程。
 
 /************* 讲课计划 ************/
 目前暂时的计划是讲5次课程，每次课程的内容大概如下：

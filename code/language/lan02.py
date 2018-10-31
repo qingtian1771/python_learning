@@ -57,6 +57,14 @@ while count < 5:
     print(count)
     count += 1  # This is the same as count = count + 1
 
+# 一个while的例子，Fibonacci series:
+print("Following is an example of while loop to print fibonacci series. ")
+# the sum of two elements defines the next
+a, b = 0, 1
+while a < 10:
+    print(a)
+    a, b = b, a+b
+
 
 # break用于跳出当前循环，continue用于跳过本次循环余下的语句，直接开始一次循环。
 # Prints out 0,1,2,3,4
@@ -142,4 +150,3 @@ print(myobjecty.variable)
 myobjectx.function()
 
 
-############### 字典
