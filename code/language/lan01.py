@@ -148,6 +148,62 @@ text = ('Put several strings within parentheses '
 print(text)
 
 
+############### 元组tuple
+# 元组就是把一些元素按照顺序去打包，形成一个数据类型。
+t = 12345, 54321, 'hello!'
+print(t[0])
+
+print(t)
+
+# Tuples may be nested:
+u = t, (1, 2, 3, 4, 5)
+print(u)
+
+# 元组中的元素是不可更改的。
+# t[0] = 88888
+
+
+# 元组虽然不可更改，但是它可以包含可变对象，例如list对象。
+v = ([1, 2, 3], [3, 2, 1])
+print(v)
+
+# 可以按照顺序来解包
+t = 12345, 54321, 'hello!'
+x, y, z = t
+print(x,y,z)
+
+
+############### 集合 Set
+# Set是一个集合，其中的元素没有顺序，但不可以重复。
+# Set可以支持集合运算，例如并、交、差、异或等。
+# Set有两种创建方式，{}或者set()。
+
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)                      # show that duplicates have been removed
+
+print('orange' in basket)                 # fast membership testings
+
+print('crabgrass' in basket)
+
+
+# Demonstrate set operations on unique letters from two words
+
+a = set('abracadabra')
+b = set('alacazam')
+print(a)                                  # unique letters in a
+
+print(a - b)                              # letters in a but not in b
+
+print(a | b)                              # letters in a or b or both
+
+print(a & b)                              # letters in both a and b
+
+print(a ^ b)                              # letters in a or b but not both
+
+# 和list comprehension 类似，也有set comprehension
+a = {x for x in 'abracadabra' if x not in 'abc'}
+print(a)
+
 ############### 字典
 # 字典类似List，但是有键和值，每个值都可以通过对应的键来存取，键可以是任意类型的对象（字符串、数字、List）
 phonebook = {}
@@ -174,3 +230,64 @@ print(phonebook)
 phonebook.pop("Jack")
 print(phonebook)
 
+# 另一个字典的例子。
+tel = {'jack': 4098, 'sape': 4139}
+tel['guido'] = 4127
+print(tel)
+
+print(tel['jack'])
+
+del tel['sape']
+tel['irv'] = 4127
+print(tel)
+
+list(tel)
+sorted(tel)
+
+print('guido' in tel)
+print('jack' not in tel)
+
+# 可以使用dict()这样的构造函数来构造字典。
+dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+
+# 和list comprehension类似，也有dict comprehension
+a = {x: x**2 for x in (2, 4, 6, 8)}
+print(a)
+
+# 当key是字符串时，也可以这么构造一个字典。
+print(dict(sape=4139, guido=4127, jack=4098))
+
+############### 循环的一些特殊方式
+
+# 对于字典来讲，可以把key和value一次取出。
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+    print(k, v)
+
+# 可以用enumerate取出index
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+
+# 还可以用zip函数将两个list并列起来。
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print('What is your {0}?  It is {1}.'.format(q, a))
+
+# 反转顺序。
+for i in reversed(range(1, 10, 2)):
+    print(i)
+
+# 排序
+basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+for f in sorted(set(basket)):
+    print(f)
+
+# 可以对sequence比较大小，以下都是True
+print((1, 2, 3) < (1, 2, 4))
+print([1, 2, 3] < [1, 2, 4])
+print('ABC' < 'C' < 'Pascal' < 'Python')
+print((1, 2, 3, 4) < (1, 2, 4))
+print((1, 2) < (1, 2, -1))
+print((1, 2, 3)  == (1.0, 2.0, 3.0))
+print((1, 2, ('aa', 'ab'))   < (1, 2, ('abc', 'a'), 4))
