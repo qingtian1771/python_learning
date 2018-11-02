@@ -48,19 +48,26 @@ CS294-112教程。
 这个课程2018年10月25日已经完成，见课程总结“python_learning_20181025_summary.txt”。
 第一次可以的目的就是给大家建立感觉，对开发环境和工具的感觉，以及深度学习的感觉，并没有很详细的内容。
 
-2.  学习python语言、numpy和scikit-learn。
+2.  开发环境搭建、学习python语言、numpy。
 课程预习：自学python教程、numpy教程。
+搭建pycharm开发环境，选择运行环境、从GIThub上取代码和修改、提交代码。
 帮大家强化python语言和numpy，以及基本的机器学习方法。
 
-3.  tensorflow详解。
+3.  机器学习理论和scikit-learn
+课程预习： 了解机器学习的简单理论，预习scikit-learn代码。
+讲解机器学习理论，结合理论讲解scikit-learn代码
+
+4.  tensorflow详解。
 课程预习：https://tensorflow.google.cn/tutorials/上面的例子；深度学习理论。
 详细的讲解tensorflow以及keras，并且通过一些例子来讲解DNN、CNN、RNN。
 
-4.  深度学习的复杂应用。
+5.  深度学习的复杂应用。
 讲解几个深度学习的复杂应用。
 
-5.  强化学习基础以及深度学习在强化学习领域中的应用。
+6.  强化学习基础以及深度学习在强化学习领域中的应用。
 讲解几个深度学习在强化学习中的应用。
+
+
 
 
 
