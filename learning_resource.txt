@@ -29,6 +29,10 @@ pytorch是另外一个深度学习python库，近来上升的势头很猛，未�
 
 强化学习：
 CS294-112教程。
+https://spinningup.openai.com/en/latest/
+https://spinningup.openai.com/en/latest/spinningup/keypapers.html
+https://rlgarage.readthedocs.io/en/latest/
+
 
 numpy
 https://docs.scipy.org/doc/numpy/user/quickstart.html
@@ -36,4 +40,21 @@ https://docs.scipy.org/doc/numpy/user/quickstart.html
 pandas
 http://pandas.pydata.org/
 https://github.com/jvns/pandas-cookbook
+
+仿真
+PyBullet：
+PyBullet is an easy to use Python module for physics simulation for robotics, games, visual
+effects and machine learning. With PyBullet you can load articulated bodies from URDF, SDF,
+MJCF and other file formats. PyBullet provides forward dynamics simulation, inverse dynamics
+computation, forward and inverse kinematics, collision detection and ray intersection queries.
+PyBullet can be easily used with TensorFlow and frameworks such as OpenAI Gym.
+
+https://pypi.org/project/pybullet/#files
+https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#
+
+机器人抓取
+https://sites.google.com/view/graspgan
+https://arxiv.org/abs/1709.07857
+https://research.googleblog.com/2017/10/closing-simulation-to-reality-gap-for.html
+
 
